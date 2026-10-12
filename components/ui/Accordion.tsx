@@ -39,7 +39,7 @@ export function Accordion({
                   ? "border-electric/40 bg-white/[0.06]"
                   : "border-white/[0.08] bg-white/[0.03] hover:border-white/20"
                 : isOpen
-                  ? "border-electric/30 bg-white shadow-[0_20px_50px_-30px_rgba(15,23,42,0.35)]"
+                  ? "border-electric/30 bg-white shadow-[0_20px_50px_-30px_rgba(11,37,69,0.35)]"
                   : "border-midnight/[0.08] bg-white hover:border-midnight/20",
             )}
           >
@@ -59,7 +59,7 @@ export function Accordion({
                   className={cn(
                     "grid size-9 shrink-0 place-items-center rounded-full transition-all duration-300",
                     isOpen
-                      ? "rotate-45 bg-electric text-white"
+                      ? "rotate-45 bg-electric text-midnight"
                       : dark
                         ? "border border-white/15 text-white"
                         : "border border-midnight/10 text-midnight",
@@ -80,7 +80,7 @@ export function Accordion({
                   exit={{ height: 0, opacity: 0 }}
                   transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
                 >
-                  <p className={cn("px-5 pb-6 pr-16 text-[15px] leading-relaxed sm:px-7", dark ? "text-steel" : "text-midnight/60")}>
+                  <p className={cn("px-5 pb-6 pr-16 text-[15px] leading-relaxed sm:px-7", dark ? "text-steel" : "text-slate")}>
                     {item.a}
                   </p>
                 </motion.div>

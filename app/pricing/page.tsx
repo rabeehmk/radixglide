@@ -47,8 +47,8 @@ export default function PricingPage() {
                     className={cn(
                       "group relative grid gap-8 overflow-hidden rounded-[28px] border p-6 transition-all duration-500 sm:p-10 lg:grid-cols-12 lg:gap-10",
                       dark
-                        ? "border-transparent bg-navy text-white shadow-[0_40px_90px_-40px_rgba(15,23,42,0.8)]"
-                        : "border-midnight/[0.07] bg-white hover:border-electric/25 hover:shadow-[0_30px_70px_-35px_rgba(15,23,42,0.35)]",
+                        ? "border-transparent bg-navy text-white shadow-[0_40px_90px_-40px_rgba(11,37,69,0.8)]"
+                        : "border-midnight/[0.07] bg-white hover:border-electric/25 hover:shadow-[0_30px_70px_-35px_rgba(11,37,69,0.35)]",
                     )}
                   >
                     {dark && (
@@ -63,11 +63,11 @@ export default function PricingPage() {
                         <span className={cn("font-mono text-sm", dark ? "text-azure" : "text-electric")}>{plan.no}</span>
                         <span className={cn("h-px w-8", dark ? "bg-azure/40" : "bg-electric/30")} />
                         {dark && (
-                          <span className="rounded-full bg-electric px-3 py-1 text-xs font-semibold text-white">Most popular</span>
+                          <span className="rounded-full bg-electric px-3 py-1 text-xs font-semibold text-midnight">Most popular</span>
                         )}
                       </div>
                       <h3 className="mt-5 text-4xl font-extrabold tracking-[-0.04em] sm:text-5xl">{plan.name}</h3>
-                      <p className={cn("mt-4 max-w-sm leading-relaxed", dark ? "text-steel" : "text-midnight/60")}>{plan.audience}</p>
+                      <p className={cn("mt-4 max-w-sm leading-relaxed", dark ? "text-steel" : "text-slate")}>{plan.audience}</p>
                     </div>
 
                     <div className="relative lg:col-span-5">
@@ -80,7 +80,7 @@ export default function PricingPage() {
                             <span
                               className={cn(
                                 "mt-0.5 grid size-5 shrink-0 place-items-center rounded-full",
-                                dark ? "bg-electric text-white" : "bg-electric/10 text-electric",
+                                dark ? "bg-electric text-midnight" : "bg-electric/10 text-electric",
                               )}
                             >
                               <Check className="size-3" strokeWidth={3} />
@@ -109,7 +109,7 @@ export default function PricingPage() {
                         className={cn(
                           "group/btn inline-flex h-12 items-center justify-center gap-2 rounded-full px-6 text-sm font-semibold transition-all duration-300 active:scale-[0.97]",
                           dark
-                            ? "bg-electric text-white hover:shadow-[0_10px_40px_-8px_rgba(59,130,246,0.7)] hover:brightness-110"
+                            ? "border border-azure/40 bg-navy text-white hover:border-azure hover:shadow-[0_10px_40px_-8px_rgba(168,131,79,0.55)]"
                             : "bg-midnight text-white hover:bg-navy",
                         )}
                       >
@@ -143,7 +143,7 @@ export default function PricingPage() {
             {pricingSteps.map((s, i) => (
               <Reveal as="li" key={s.title} delay={i * 0.08}>
                 <div className="relative h-full rounded-[22px] border border-white/[0.08] bg-white/[0.03] p-6 backdrop-blur-sm transition-colors duration-500 hover:border-electric/40">
-                  <span className="grid size-10 place-items-center rounded-full bg-electric text-sm font-bold text-white">{i + 1}</span>
+                  <span className="grid size-10 place-items-center rounded-full bg-electric text-sm font-bold text-midnight">{i + 1}</span>
                   <h3 className="mt-6 text-lg font-bold tracking-[-0.02em]">{s.title}</h3>
                   <p className="mt-2 text-sm leading-relaxed text-steel">{s.text}</p>
                 </div>

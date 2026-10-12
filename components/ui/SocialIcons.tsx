@@ -48,7 +48,7 @@ export function SocialIcons({ className }: { className?: string }) {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={s.label}
-                className="grid size-10 place-items-center rounded-full border border-white/10 text-steel transition-all duration-300 hover:-translate-y-0.5 hover:border-electric/50 hover:bg-electric hover:text-white"
+                className="grid size-10 place-items-center rounded-full border border-white/10 text-steel transition-all duration-300 hover:-translate-y-0.5 hover:border-electric/50 hover:bg-electric hover:text-midnight"
               >
                 {icon}
               </a>

@@ -6,8 +6,8 @@ type Variant = "primary" | "outline-dark" | "outline-light" | "dark";
 
 const variants: Record<Variant, string> = {
   primary:
-    "bg-electric text-white shadow-[0_0_0_0_rgba(59,130,246,0)] hover:shadow-[0_8px_40px_-6px_rgba(59,130,246,0.65)] hover:brightness-110",
-  dark: "bg-midnight text-white hover:bg-navy hover:shadow-[0_10px_40px_-10px_rgba(15,23,42,0.7)]",
+    "border border-azure/40 bg-navy text-white hover:border-azure hover:bg-midnight hover:shadow-[0_8px_40px_-6px_rgba(168,131,79,0.55)]",
+  dark: "bg-midnight text-white hover:bg-navy hover:shadow-[0_10px_40px_-10px_rgba(11,37,69,0.7)]",
   "outline-dark":
     "border border-white/15 bg-white/[0.04] text-white backdrop-blur-md hover:border-electric/50 hover:bg-white/[0.08]",
   "outline-light":

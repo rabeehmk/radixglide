@@ -6,7 +6,7 @@ import { CTABanner } from "@/components/sections/CTA";
 export const metadata = pageMetadata({
   title: "Projects & Case Studies",
   description:
-    "Explore RadixGlide projects including Otomation, Edufix Learning Academy, Eyetrack Solutions and PetalBox — software, websites, e-commerce and digital solutions.",
+    "Explore RadixGlide projects including Artecs Prime Decore, Latefite, a photography portfolio and a café website — websites, e-commerce and digital solutions.",
   path: "/projects",
 });
 

@@ -64,7 +64,7 @@ export default function CareersPage() {
                     <Icon className="size-[22px]" />
                   </span>
                   <h3 className="mt-6 text-lg font-bold tracking-[-0.02em] text-midnight">{title}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-midnight/55">{text}</p>
+                  <p className="mt-2 text-sm leading-relaxed text-slate">{text}</p>
                 </div>
               </Reveal>
             ))}
@@ -108,10 +108,10 @@ export default function CareersPage() {
                     >
                       <div>
                         <h3 className="text-xl font-bold text-midnight">{o.title}</h3>
-                        <p className="mt-1 text-sm text-midnight/55">
+                        <p className="mt-1 text-sm text-slate">
                           {o.type} · {o.location}
                         </p>
-                        <p className="mt-2 text-midnight/65">{o.summary}</p>
+                        <p className="mt-2 text-slate">{o.summary}</p>
                       </div>
                       <ArrowUpRight className="size-5 shrink-0 text-electric transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
                     </Link>
@@ -124,13 +124,13 @@ export default function CareersPage() {
                   <Briefcase className="size-6" />
                 </span>
                 <h3 className="mt-6 text-2xl font-bold tracking-[-0.03em] text-midnight">No current openings</h3>
-                <p className="mt-3 max-w-md text-midnight/60">
+                <p className="mt-3 max-w-md text-slate">
                   We don&apos;t have open roles right now, but we&apos;re always happy to hear from talented people.
                   Send us your CV and we&apos;ll keep it on file for future opportunities.
                 </p>
                 <Link
                   href={cvHref}
-                  className="group mt-8 inline-flex h-12 items-center gap-2 rounded-full bg-electric px-6 text-sm font-semibold text-white transition-all hover:shadow-[0_10px_40px_-8px_rgba(59,130,246,0.7)] hover:brightness-110"
+                  className="group mt-8 inline-flex h-12 items-center gap-2 rounded-full bg-navy px-6 text-sm font-semibold text-white transition-all hover:shadow-[0_10px_40px_-8px_rgba(168,131,79,0.7)] hover:brightness-110"
                 >
                   <Send className="size-4" /> Send Your CV
                 </Link>

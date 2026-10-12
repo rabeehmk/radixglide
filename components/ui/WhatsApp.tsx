@@ -14,7 +14,7 @@ export function WhatsAppIcon({ className }: { className?: string }) {
 }
 
 /**
- * Floating WhatsApp chat button (bottom-right). Renders only when a WhatsApp number is
+ * Floating WhatsApp chat button (bottom-right, stacked above the AI chat launcher). Renders only when a WhatsApp number is
  * configured in data/site.ts or NEXT_PUBLIC_WHATSAPP_NUMBER.
  */
 export function FloatingWhatsApp() {
@@ -42,7 +42,7 @@ export function FloatingWhatsApp() {
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.6, y: 20 }}
           transition={{ type: "spring", stiffness: 300, damping: 22 }}
-          className="group fixed bottom-5 right-5 z-[55] flex items-center gap-3 rounded-full bg-[#25D366] p-3.5 text-white shadow-[0_15px_40px_-10px_rgba(37,211,102,0.7)] transition-transform hover:scale-105 sm:bottom-7 sm:right-7"
+          className="group fixed bottom-[5.5rem] right-5 z-[55] flex items-center gap-3 rounded-full bg-[#25D366] p-3.5 text-white shadow-[0_15px_40px_-10px_rgba(37,211,102,0.7)] transition-transform hover:scale-105 sm:bottom-[6.5rem] sm:right-7"
         >
           <span aria-hidden className="absolute inset-0 animate-ping rounded-full bg-[#25D366]/40 [animation-duration:3s]" />
           <WhatsAppIcon className="relative size-7" />

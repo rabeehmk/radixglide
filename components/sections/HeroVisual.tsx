@@ -39,22 +39,22 @@ export function HeroVisual() {
       >
         <defs>
           <linearGradient id="hv-line" x1="0" x2="1">
-            <stop offset="0" stopColor="#60A5FA" stopOpacity="0" />
-            <stop offset="0.5" stopColor="#60A5FA" stopOpacity="0.9" />
-            <stop offset="1" stopColor="#60A5FA" stopOpacity="0" />
+            <stop offset="0" stopColor="#D6BE96" stopOpacity="0" />
+            <stop offset="0.5" stopColor="#D6BE96" stopOpacity="0.9" />
+            <stop offset="1" stopColor="#D6BE96" stopOpacity="0" />
           </linearGradient>
         </defs>
         {connectors.map((d, i) => (
           <g key={d}>
-            <path d={d} fill="none" stroke="rgba(59,130,246,0.18)" strokeWidth="0.25" strokeDasharray="0.8 0.8" vectorEffect="non-scaling-stroke" />
+            <path d={d} fill="none" stroke="rgba(168,131,79,0.18)" strokeWidth="0.25" strokeDasharray="0.8 0.8" vectorEffect="non-scaling-stroke" />
             <motion.path
               d={d}
               fill="none"
-              stroke="#60A5FA"
+              stroke="#D6BE96"
               strokeWidth="1.5"
               strokeLinecap="round"
               vectorEffect="non-scaling-stroke"
-              style={{ filter: "drop-shadow(0 0 4px #60A5FA)" }}
+              style={{ filter: "drop-shadow(0 0 4px #D6BE96)" }}
               initial={{ pathLength: 0.12, pathOffset: 0, opacity: 0 }}
               animate={{ pathOffset: [0, 0.88], opacity: [0, 1, 1, 0] }}
               transition={{ duration: 2.8, repeat: Infinity, delay: 1 + i * 0.7, ease: "easeInOut", repeatDelay: 1.2 }}
@@ -94,8 +94,8 @@ export function HeroVisual() {
           <svg viewBox="0 0 200 70" className="mt-3 w-full" aria-hidden>
             <defs>
               <linearGradient id="hv-area" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0" stopColor="#60A5FA" stopOpacity="0.35" />
-                <stop offset="1" stopColor="#60A5FA" stopOpacity="0" />
+                <stop offset="0" stopColor="#D6BE96" stopOpacity="0.35" />
+                <stop offset="1" stopColor="#D6BE96" stopOpacity="0" />
               </linearGradient>
             </defs>
             {[17, 35, 53].map((y) => (
@@ -111,7 +111,7 @@ export function HeroVisual() {
             <motion.path
               d="M0 60 C 20 56, 30 50, 45 52 S 75 38, 95 40 S 125 26, 145 28 S 180 10, 200 6"
               fill="none"
-              stroke="#60A5FA"
+              stroke="#D6BE96"
               strokeWidth="2"
               strokeLinecap="round"
               initial={{ pathLength: 0 }}
@@ -119,7 +119,7 @@ export function HeroVisual() {
               transition={{ delay: 0.9, duration: 1.8, ease: "easeInOut" }}
             />
             <motion.circle
-              cx="200" cy="6" r="3.5" fill="#60A5FA"
+              cx="200" cy="6" r="3.5" fill="#D6BE96"
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
               transition={{ delay: 2.6 }}

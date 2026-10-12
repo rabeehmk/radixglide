@@ -70,7 +70,7 @@ export default function AboutPage() {
           <div className="lg:col-span-5">
             <SectionHeading eyebrow="Who we are" title="One team for technology, creativity and growth" />
           </div>
-          <div className="space-y-6 text-lg leading-relaxed text-midnight/70 lg:col-span-7">
+          <div className="space-y-6 text-lg leading-relaxed text-slate lg:col-span-7">
             <Reveal>
               <p>
                 RadixGlide is a full-service IT and digital solutions company. We bring software engineering,
@@ -136,7 +136,7 @@ export default function AboutPage() {
           ].map(({ icon: Icon, label, text }, i) => (
             <Reveal key={label} delay={i * 0.1}>
               <div className="glass h-full rounded-[28px] p-8 sm:p-10">
-                <span className="grid size-12 place-items-center rounded-2xl bg-electric text-white">
+                <span className="grid size-12 place-items-center rounded-2xl bg-electric text-midnight">
                   <Icon className="size-6" />
                 </span>
                 <h2 className="mt-8 text-xs font-semibold uppercase tracking-[0.18em] text-azure">{label}</h2>
@@ -163,12 +163,12 @@ export default function AboutPage() {
               {journey.map((j, i) => (
                 <Reveal as="li" key={j.stage} delay={i * 0.12}>
                   <div className="flex gap-5 md:flex-col md:items-center md:text-center">
-                    <span className="relative grid size-12 shrink-0 place-items-center rounded-full bg-electric text-sm font-bold text-white shadow-[0_0_0_6px_rgba(59,130,246,0.12)]">
+                    <span className="relative grid size-12 shrink-0 place-items-center rounded-full bg-electric text-sm font-bold text-midnight shadow-[0_0_0_6px_rgba(168,131,79,0.12)]">
                       {i + 1}
                     </span>
                     <div className="md:mt-6">
                       <h3 className="text-xl font-bold tracking-[-0.02em] text-midnight">{j.stage}</h3>
-                      <p className="mt-2 text-sm leading-relaxed text-midnight/55">{j.text}</p>
+                      <p className="mt-2 text-sm leading-relaxed text-slate">{j.text}</p>
                     </div>
                   </div>
                 </Reveal>
@@ -185,12 +185,12 @@ export default function AboutPage() {
           <ul className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {values.map(({ icon: Icon, title, text }, i) => (
               <Reveal as="li" key={title} delay={(i % 3) * 0.06}>
-                <div className="group h-full rounded-[24px] border border-midnight/[0.07] bg-white p-7 transition-all duration-500 hover:-translate-y-1 hover:border-electric/25 hover:shadow-[0_30px_60px_-30px_rgba(15,23,42,0.3)]">
+                <div className="group h-full rounded-[24px] border border-midnight/[0.07] bg-white p-7 transition-all duration-500 hover:-translate-y-1 hover:border-electric/25 hover:shadow-[0_30px_60px_-30px_rgba(11,37,69,0.3)]">
                   <span className="grid size-12 place-items-center rounded-2xl bg-snow text-electric transition-colors duration-500 group-hover:bg-navy group-hover:text-azure">
                     <Icon className="size-[22px]" strokeWidth={1.75} />
                   </span>
                   <h3 className="mt-6 text-xl font-bold tracking-[-0.02em] text-midnight">{title}</h3>
-                  <p className="mt-2 leading-relaxed text-midnight/55">{text}</p>
+                  <p className="mt-2 leading-relaxed text-slate">{text}</p>
                 </div>
               </Reveal>
             ))}
@@ -217,7 +217,7 @@ export default function AboutPage() {
                   </span>
                   <div>
                     <h3 className="font-bold text-midnight">{r.title}</h3>
-                    <p className="mt-1 text-sm leading-relaxed text-midnight/55">{r.text}</p>
+                    <p className="mt-1 text-sm leading-relaxed text-slate">{r.text}</p>
                   </div>
                 </div>
               </Reveal>

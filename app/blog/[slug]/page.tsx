@@ -40,12 +40,12 @@ function ArticleBlock({ block }: { block: Block }) {
     case "h3":
       return <h3 className="mt-8 text-xl font-bold tracking-[-0.02em] text-midnight">{block.text}</h3>;
     case "p":
-      return <p className="mt-5 text-[17px] leading-[1.8] text-midnight/75">{block.text}</p>;
+      return <p className="mt-5 text-[17px] leading-[1.8] text-slate">{block.text}</p>;
     case "ul":
       return (
         <ul className="mt-5 space-y-3">
           {block.items.map((item) => (
-            <li key={item} className="flex gap-3 text-[17px] leading-[1.7] text-midnight/75">
+            <li key={item} className="flex gap-3 text-[17px] leading-[1.7] text-slate">
               <span aria-hidden className="mt-[11px] size-1.5 shrink-0 rounded-full bg-electric" />
               {item}
             </li>
@@ -61,12 +61,12 @@ function ArticleBlock({ block }: { block: Block }) {
     case "callout":
       return (
         <aside className="my-10 flex gap-4 rounded-[20px] border border-electric/20 bg-electric/[0.06] p-6">
-          <span className="grid size-10 shrink-0 place-items-center rounded-xl bg-electric text-white">
+          <span className="grid size-10 shrink-0 place-items-center rounded-xl bg-electric text-midnight">
             <Lightbulb className="size-5" />
           </span>
           <div>
             <p className="font-bold text-midnight">{block.title}</p>
-            <p className="mt-1.5 leading-relaxed text-midnight/70">{block.text}</p>
+            <p className="mt-1.5 leading-relaxed text-slate">{block.text}</p>
           </div>
         </aside>
       );
@@ -114,7 +114,7 @@ export default async function ArticlePage({ params }: Params) {
                     <ol className="mt-4 space-y-3 text-sm">
                       {toc.map((h) => (
                         <li key={h.text}>
-                          <a href={`#${headingId(h.text)}`} className="text-midnight/65 transition-colors hover:text-electric">
+                          <a href={`#${headingId(h.text)}`} className="text-slate transition-colors hover:text-electric">
                             {h.text}
                           </a>
                         </li>
@@ -135,7 +135,7 @@ export default async function ArticlePage({ params }: Params) {
               ))}
 
               <div className="mt-16 flex flex-col gap-6 border-t border-midnight/[0.08] pt-8 sm:flex-row sm:items-center sm:justify-between">
-                <Link href="/blog" className="inline-flex items-center gap-2 text-sm font-semibold text-midnight/70 hover:text-electric">
+                <Link href="/blog" className="inline-flex items-center gap-2 text-sm font-semibold text-slate hover:text-electric">
                   <ArrowLeft className="size-4" /> All articles
                 </Link>
                 <ShareButtons url={url} title={post.title} />

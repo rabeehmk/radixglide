@@ -29,13 +29,13 @@ export function BlogCard({ post, className }: { post: BlogPost; className?: stri
     <article className={cn("group h-full", className)}>
       <Link
         href={`/blog/${post.slug}`}
-        className="flex h-full flex-col overflow-hidden rounded-[24px] border border-midnight/[0.07] bg-white transition-all duration-500 hover:-translate-y-1.5 hover:border-electric/25 hover:shadow-[0_30px_60px_-25px_rgba(15,23,42,0.3)]"
+        className="flex h-full flex-col overflow-hidden rounded-[24px] border border-midnight/[0.07] bg-white transition-all duration-500 hover:-translate-y-1.5 hover:border-electric/25 hover:shadow-[0_30px_60px_-25px_rgba(11,37,69,0.3)]"
       >
         <BlogImage post={post} className="aspect-[16/10]" />
         <div className="flex flex-1 flex-col p-6">
           <p className="text-xs font-semibold uppercase tracking-[0.14em] text-electric">{post.category}</p>
           <h3 className="mt-3 text-lg font-bold leading-snug tracking-[-0.02em] text-midnight sm:text-xl">{post.title}</h3>
-          <p className="mt-3 line-clamp-3 flex-1 text-sm leading-relaxed text-midnight/55">{post.excerpt}</p>
+          <p className="mt-3 line-clamp-3 flex-1 text-sm leading-relaxed text-slate">{post.excerpt}</p>
           <div className="mt-6 flex items-center justify-between gap-3 border-t border-midnight/[0.06] pt-5">
             <span className="flex items-center gap-2 text-xs text-midnight/45">
               <time dateTime={post.date}>{formatDate(post.date)}</time>

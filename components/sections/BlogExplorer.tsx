@@ -49,7 +49,7 @@ export function BlogExplorer({ posts }: { posts: BlogPost[] }) {
                 "shrink-0 rounded-full border px-4 py-2 text-sm font-medium transition-all duration-300",
                 category === c
                   ? "border-midnight bg-midnight text-white"
-                  : "border-midnight/10 bg-white text-midnight/65 hover:border-electric/40 hover:text-midnight",
+                  : "border-midnight/10 bg-white text-slate hover:border-electric/40 hover:text-midnight",
               )}
             >
               {c}
@@ -109,7 +109,7 @@ export function BlogExplorer({ posts }: { posts: BlogPost[] }) {
       ) : (
         <div className="mt-6 rounded-[24px] border border-dashed border-midnight/15 bg-white px-6 py-16 text-center">
           <p className="text-lg font-semibold text-midnight">No articles found</p>
-          <p className="mt-2 text-sm text-midnight/55">
+          <p className="mt-2 text-sm text-slate">
             {category !== "All" && !query
               ? `We haven't published anything in ${category} yet — check back soon.`
               : "Try a different search term or category."}

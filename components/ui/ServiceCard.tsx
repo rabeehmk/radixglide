@@ -10,7 +10,7 @@ export function ServiceCard({ service, index, className }: { service: Service; i
     <Link
       href={`/services/${service.slug}`}
       className={cn(
-        "group relative flex h-full flex-col overflow-hidden rounded-[24px] border border-midnight/[0.07] bg-white p-6 transition-all duration-500 hover:-translate-y-1.5 hover:border-electric/25 hover:shadow-[0_30px_60px_-25px_rgba(15,23,42,0.3)] sm:p-7",
+        "group relative flex h-full flex-col overflow-hidden rounded-[24px] border border-midnight/[0.07] bg-white p-6 transition-all duration-500 hover:-translate-y-1.5 hover:border-electric/25 hover:shadow-[0_30px_60px_-25px_rgba(11,37,69,0.3)] sm:p-7",
         className,
       )}
     >
@@ -27,7 +27,7 @@ export function ServiceCard({ service, index, className }: { service: Service; i
         )}
       </div>
       <h3 className="relative mt-6 text-lg font-bold tracking-[-0.02em] text-midnight sm:mt-8 sm:text-xl">{service.title}</h3>
-      <p className="relative mt-2.5 flex-1 text-sm leading-relaxed text-midnight/55">{service.summary}</p>
+      <p className="relative mt-2.5 flex-1 text-sm leading-relaxed text-slate">{service.summary}</p>
       <span className="relative mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-electric">
         Learn more
         <ArrowUpRight className="size-4 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />

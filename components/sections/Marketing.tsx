@@ -21,7 +21,7 @@ function GrowthDashboard() {
   return (
     <div className="relative">
       <div aria-hidden className="absolute -inset-6 rounded-[40px] bg-azure/20 blur-3xl" />
-      <div className="relative overflow-hidden rounded-[28px] border border-midnight/[0.07] bg-white p-5 shadow-[0_40px_100px_-40px_rgba(15,23,42,0.45)] sm:p-7">
+      <div className="relative overflow-hidden rounded-[28px] border border-midnight/[0.07] bg-white p-5 shadow-[0_40px_100px_-40px_rgba(11,37,69,0.45)] sm:p-7">
         <div className="flex items-start justify-between gap-4">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.16em] text-midnight/40">
@@ -56,7 +56,7 @@ function GrowthDashboard() {
             <motion.path
               d="M6 70 L18 64 L31 66 L43 52 L56 45 L68 36 L81 22 L94 6"
               fill="none"
-              stroke="#3B82F6"
+              stroke="#A8834F"
               strokeWidth="2"
               vectorEffect="non-scaling-stroke"
               strokeLinecap="round"
@@ -90,7 +90,7 @@ function GrowthDashboard() {
       </div>
 
       {/* floating chip */}
-      <div className="absolute -left-3 top-1/3 hidden animate-float rounded-2xl border border-midnight/[0.06] bg-white/80 px-4 py-3 shadow-[0_20px_50px_-20px_rgba(15,23,42,0.5)] backdrop-blur-md sm:block lg:-left-8">
+      <div className="absolute -left-3 top-1/3 hidden animate-float rounded-2xl border border-midnight/[0.06] bg-white/80 px-4 py-3 shadow-[0_20px_50px_-20px_rgba(11,37,69,0.5)] backdrop-blur-md sm:block lg:-left-8">
         <p className="text-[10px] font-semibold uppercase tracking-wider text-midnight/40">Top channel</p>
         <p className="mt-0.5 flex items-center gap-1.5 text-sm font-bold text-midnight">
           Google Ads <ArrowUpRight className="size-4 text-electric" />
@@ -119,7 +119,7 @@ export function Marketing() {
               {marketingChannels.map((c) => (
                 <li
                   key={c}
-                  className="rounded-full border border-midnight/10 bg-white px-4 py-2 text-sm font-medium text-midnight/70 transition-all duration-300 hover:-translate-y-0.5 hover:border-electric hover:bg-navy hover:text-azure"
+                  className="rounded-full border border-midnight/10 bg-white px-4 py-2 text-sm font-medium text-slate transition-all duration-300 hover:-translate-y-0.5 hover:border-electric hover:bg-navy hover:text-azure"
                 >
                   {c}
                 </li>

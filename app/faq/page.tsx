@@ -37,7 +37,7 @@ export default function FAQPage() {
                   <li key={c.id} className="shrink-0">
                     <a
                       href={`#${c.id}`}
-                      className="block rounded-full border border-midnight/10 bg-white px-4 py-2 text-sm font-medium text-midnight/70 transition-colors hover:border-electric/40 hover:text-electric lg:rounded-xl lg:border-transparent lg:bg-transparent lg:px-3"
+                      className="block rounded-full border border-midnight/10 bg-white px-4 py-2 text-sm font-medium text-slate transition-colors hover:border-electric/40 hover:text-electric lg:rounded-xl lg:border-transparent lg:bg-transparent lg:px-3"
                     >
                       {c.title}
                     </a>

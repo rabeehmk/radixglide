@@ -24,7 +24,7 @@ export function Services() {
             }
           />
           <Reveal delay={0.2} className="lg:max-w-sm">
-            <p className="text-pretty text-base leading-relaxed text-midnight/60 sm:text-lg">
+            <p className="text-pretty text-base leading-relaxed text-slate sm:text-lg">
               From powerful software solutions to result-driven digital marketing, we provide
               end-to-end services designed to take your business to the next level.
             </p>
@@ -39,7 +39,7 @@ export function Services() {
                 <Reveal as="li" key={s.title} className="md:col-span-2 lg:row-span-2">
                   <Link
                     href={`/services/${s.slug}`}
-                    className="group relative flex h-full min-h-[420px] flex-col overflow-hidden rounded-[28px] bg-navy p-7 text-white shadow-[0_30px_80px_-30px_rgba(15,23,42,0.6)] transition-transform duration-500 hover:-translate-y-1.5 sm:p-10"
+                    className="group relative flex h-full min-h-[420px] flex-col overflow-hidden rounded-[28px] bg-navy p-7 text-white shadow-[0_30px_80px_-30px_rgba(11,37,69,0.6)] transition-transform duration-500 hover:-translate-y-1.5 sm:p-10"
                   >
                     <div aria-hidden className="grid-dark absolute inset-0 opacity-70" />
                     <div
@@ -50,7 +50,7 @@ export function Services() {
                     <div aria-hidden className="absolute bottom-0 right-0 size-[26rem] translate-x-1/3 translate-y-1/3 rounded-full border border-electric/10" />
 
                     <div className="relative flex items-start justify-between">
-                      <span className="grid size-14 place-items-center rounded-2xl bg-electric text-white shadow-[0_0_40px_-5px_rgba(59,130,246,0.6)]">
+                      <span className="grid size-14 place-items-center rounded-2xl bg-electric text-midnight shadow-[0_0_40px_-5px_rgba(168,131,79,0.6)]">
                         <Icon className="size-6" />
                       </span>
                       <span className="rounded-full border border-electric/30 bg-electric/10 px-3 py-1 text-xs font-semibold text-azure">
@@ -90,7 +90,7 @@ export function Services() {
               >
                 <Link
                   href={`/services/${s.slug}`}
-                  className="group relative flex h-full flex-col overflow-hidden rounded-[24px] border border-midnight/[0.07] bg-white p-6 transition-all duration-500 hover:-translate-y-1.5 hover:border-electric/20 hover:shadow-[0_30px_60px_-25px_rgba(15,23,42,0.35)] sm:p-7"
+                  className="group relative flex h-full flex-col overflow-hidden rounded-[24px] border border-midnight/[0.07] bg-white p-6 transition-all duration-500 hover:-translate-y-1.5 hover:border-electric/20 hover:shadow-[0_30px_60px_-25px_rgba(11,37,69,0.35)] sm:p-7"
                 >
                   <div
                     aria-hidden
@@ -107,7 +107,7 @@ export function Services() {
                   <h3 className="relative mt-6 text-lg sm:mt-10 font-bold tracking-[-0.02em] text-midnight sm:text-xl">
                     {s.title}
                   </h3>
-                  <p className="relative mt-2.5 text-sm leading-relaxed text-midnight/55">{s.summary}</p>
+                  <p className="relative mt-2.5 text-sm leading-relaxed text-slate">{s.summary}</p>
                 </Link>
               </Reveal>
             );

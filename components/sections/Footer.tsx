@@ -52,7 +52,7 @@ function ContactItem({
 export function Footer() {
   const { contact } = site;
   return (
-    <footer className="relative overflow-hidden bg-midnight text-white">
+    <footer className="relative overflow-hidden bg-navy text-white">
       <div aria-hidden className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/15 to-transparent" />
       <div className="container-x pb-10 pt-16 lg:pt-24">
         <div className="grid grid-cols-2 gap-x-6 gap-y-12 lg:grid-cols-12">

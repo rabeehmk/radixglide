@@ -9,9 +9,9 @@ export function LostRoute() {
       <svg viewBox="0 0 400 160" className="absolute inset-0 size-full" fill="none">
         <defs>
           <linearGradient id="lr-line" x1="0" x2="1">
-            <stop offset="0" stopColor="#3B82F6" stopOpacity="0.1" />
-            <stop offset="0.5" stopColor="#60A5FA" />
-            <stop offset="1" stopColor="#3B82F6" stopOpacity="0.1" />
+            <stop offset="0" stopColor="#A8834F" stopOpacity="0.1" />
+            <stop offset="0.5" stopColor="#D6BE96" />
+            <stop offset="1" stopColor="#A8834F" stopOpacity="0.1" />
           </linearGradient>
         </defs>
         {/* the expected route */}
@@ -26,7 +26,7 @@ export function LostRoute() {
           animate={{ pathLength: 1 }}
           transition={{ duration: 2, ease: "easeInOut" }}
         />
-        <circle cx="20" cy="120" r="5" fill="#3B82F6" />
+        <circle cx="20" cy="120" r="5" fill="#A8834F" />
         <circle cx="380" cy="120" r="5" stroke="rgba(255,255,255,0.3)" strokeWidth="1.5" />
       </svg>
       <motion.div

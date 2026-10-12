@@ -62,7 +62,7 @@ export function Hero() {
               transition={{ duration: 0.7, ease }}
               className="inline-flex items-center gap-2 rounded-full border border-electric/25 bg-electric/[0.07] py-1.5 pl-1.5 pr-4 text-xs font-medium text-azure sm:text-sm"
             >
-              <span className="grid size-6 place-items-center rounded-full bg-electric text-white">
+              <span className="grid size-6 place-items-center rounded-full bg-electric text-midnight">
                 <Sparkles className="size-3.5" />
               </span>
               Your IT &amp; Digital Growth Partner
@@ -86,7 +86,7 @@ export function Hero() {
                   <motion.path
                     d="M2 12 C 80 2, 200 2, 298 10"
                     fill="none"
-                    stroke="#60A5FA"
+                    stroke="#D6BE96"
                     strokeWidth="3"
                     strokeLinecap="round"
                     initial={{ pathLength: 0 }}
@@ -169,7 +169,7 @@ export function Hero() {
               ) : (
                 <div className="grid-dark grid size-full place-items-center text-center">
                   <div>
-                    <span className="mx-auto grid size-16 place-items-center rounded-full bg-electric text-white">
+                    <span className="mx-auto grid size-16 place-items-center rounded-full bg-electric text-midnight">
                       <Play className="ml-1 size-6 fill-current" />
                     </span>
                     <p className="mt-5 text-xl font-bold">Our story video is coming soon</p>
@@ -182,7 +182,7 @@ export function Hero() {
                 onClick={() => setVideoOpen(false)}
                 aria-label="Close video"
                 autoFocus
-                className="absolute right-4 top-4 grid size-10 place-items-center rounded-full bg-midnight/60 text-white backdrop-blur transition-colors hover:bg-electric hover:text-white"
+                className="absolute right-4 top-4 grid size-10 place-items-center rounded-full bg-midnight/60 text-white backdrop-blur transition-colors hover:bg-electric hover:text-midnight"
               >
                 <X className="size-5" />
               </button>

@@ -135,7 +135,7 @@ export function ContactForm() {
           <CheckCircle2 className="size-8" />
         </span>
         <h2 className="mt-6 text-2xl font-bold tracking-[-0.03em] text-midnight">Enquiry sent</h2>
-        <p className="mt-3 max-w-sm text-midnight/60">
+        <p className="mt-3 max-w-sm text-slate">
           Thanks! Your enquiry has been submitted. Our team will get back to you soon.
         </p>
         <button
@@ -159,10 +159,10 @@ export function ContactForm() {
       ref={formRef}
       onSubmit={onSubmit}
       noValidate
-      className="relative rounded-[28px] border border-midnight/[0.07] bg-white p-6 shadow-[0_40px_90px_-50px_rgba(15,23,42,0.35)] sm:p-10"
+      className="relative rounded-[28px] border border-midnight/[0.07] bg-white p-6 shadow-[0_40px_90px_-50px_rgba(11,37,69,0.35)] sm:p-10"
     >
       <h2 className="text-2xl font-bold tracking-[-0.03em] text-midnight">Tell us about your project</h2>
-      <p className="mt-2 text-sm text-midnight/55">Fields marked * are required.</p>
+      <p className="mt-2 text-sm text-slate">Fields marked * are required.</p>
 
       <div className="mt-8 grid gap-5 sm:grid-cols-2">
         <Field id={id("name")} label="Full Name" required error={errors.name}>
@@ -298,9 +298,9 @@ export function ContactForm() {
               type="checkbox"
               checked={form.consent}
               onChange={(e) => set("consent", e.target.checked)}
-              className="mt-0.5 size-5 shrink-0 cursor-pointer rounded accent-[#3B82F6]"
+              className="mt-0.5 size-5 shrink-0 cursor-pointer rounded accent-[#A8834F]"
             />
-            <span className="text-sm leading-relaxed text-midnight/65">
+            <span className="text-sm leading-relaxed text-slate">
               I agree that RadixGlide may contact me about this enquiry and process my details as described in the{" "}
               <Link href="/privacy-policy" className="font-semibold text-electric hover:underline">
                 Privacy Policy
@@ -352,7 +352,7 @@ export function ContactForm() {
       <button
         type="submit"
         disabled={status === "submitting"}
-        className="group mt-8 inline-flex h-14 w-full items-center justify-center gap-2.5 rounded-full bg-electric px-7 text-[15px] font-semibold text-white transition-all duration-300 hover:shadow-[0_10px_40px_-8px_rgba(59,130,246,0.7)] hover:brightness-110 active:scale-[0.98] disabled:cursor-wait disabled:opacity-70 sm:w-auto"
+        className="group mt-8 inline-flex h-14 w-full items-center justify-center gap-2.5 rounded-full bg-navy px-7 text-[15px] font-semibold text-white transition-all duration-300 hover:shadow-[0_10px_40px_-8px_rgba(168,131,79,0.7)] hover:brightness-110 active:scale-[0.98] disabled:cursor-wait disabled:opacity-70 sm:w-auto"
       >
         {status === "submitting" ? (
           <>

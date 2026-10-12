@@ -40,7 +40,7 @@ export default function BlogPage() {
             <article className="group">
               <Link
                 href={`/blog/${featured.slug}`}
-                className="grid overflow-hidden rounded-[28px] border border-midnight/[0.07] bg-white transition-all duration-500 hover:border-electric/25 hover:shadow-[0_40px_80px_-40px_rgba(15,23,42,0.4)] lg:grid-cols-2"
+                className="grid overflow-hidden rounded-[28px] border border-midnight/[0.07] bg-white transition-all duration-500 hover:border-electric/25 hover:shadow-[0_40px_80px_-40px_rgba(11,37,69,0.4)] lg:grid-cols-2"
               >
                 <BlogImage post={featured} priority className="aspect-[16/10] lg:aspect-auto lg:min-h-[420px]" />
                 <div className="flex flex-col justify-center p-7 sm:p-10 lg:p-14">
@@ -48,7 +48,7 @@ export default function BlogPage() {
                   <h3 className="mt-4 text-balance text-3xl font-extrabold leading-tight tracking-[-0.035em] text-midnight sm:text-4xl">
                     {featured.title}
                   </h3>
-                  <p className="mt-4 leading-relaxed text-midnight/60">{featured.excerpt}</p>
+                  <p className="mt-4 leading-relaxed text-slate">{featured.excerpt}</p>
                   <div className="mt-8 flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-midnight/50">
                     <span className="font-semibold text-midnight/80">{featured.author}</span>
                     <time dateTime={featured.date}>{formatDate(featured.date)}</time>

@@ -18,18 +18,18 @@ export const site = {
 
   contact: {
     /** e.g. "hello@yourdomain.com" */
-    email: "",
+    email: "radixgildetech@gmail.com",
     /** Display format, e.g. "+971 50 123 4567" */
-    phone: "",
+    phone: "+91 75105 12105",
     /**
      * WhatsApp number in international format, e.g. "+971501234567".
      * Can also be set with the NEXT_PUBLIC_WHATSAPP_NUMBER environment variable.
      */
-    whatsapp: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "",
+    whatsapp: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "+917510512105",
     /** e.g. "Dubai, United Arab Emirates" */
-    location: "",
+    location: "Calicut, Kerala, India",
     /** e.g. "Sunday – Thursday, 9:00 AM – 6:00 PM (GST)" */
-    hours: "",
+    hours: "9:00 AM – 6:00 PM (IST)",
     /** Where CVs should be sent. Falls back to the contact page when empty. */
     careersEmail: "",
   },

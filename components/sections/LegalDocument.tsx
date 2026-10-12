@@ -32,7 +32,7 @@ export function LegalDocument({
               <ol className="mt-4 space-y-2.5 text-sm">
                 {sections.map((s, i) => (
                   <li key={s.title}>
-                    <a href={`#${headingId(s.title)}`} className="text-midnight/65 hover:text-electric">
+                    <a href={`#${headingId(s.title)}`} className="text-slate hover:text-electric">
                       {i + 1}. {s.title}
                     </a>
                   </li>
@@ -63,14 +63,14 @@ export function LegalDocument({
                   </p>
                 )}
                 {s.paragraphs?.map((p) => (
-                  <p key={p} className="mt-4 leading-[1.8] text-midnight/70">
+                  <p key={p} className="mt-4 leading-[1.8] text-slate">
                     {p}
                   </p>
                 ))}
                 {s.list && (
                   <ul className="mt-4 space-y-2.5">
                     {s.list.map((item) => (
-                      <li key={item} className="flex gap-3 leading-relaxed text-midnight/70">
+                      <li key={item} className="flex gap-3 leading-relaxed text-slate">
                         <span aria-hidden className="mt-[10px] size-1.5 shrink-0 rounded-full bg-electric" />
                         {item}
                       </li>

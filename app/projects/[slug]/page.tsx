@@ -84,13 +84,13 @@ export default async function ProjectPage({ params }: Params) {
           </div>
           <div className="space-y-10 lg:col-span-8">
             <Reveal>
-              <p className="text-lg leading-relaxed text-midnight/75 sm:text-xl">{p.overview}</p>
+              <p className="text-lg leading-relaxed text-slate sm:text-xl">{p.overview}</p>
             </Reveal>
             <div className="grid gap-5 md:grid-cols-2">
               <Reveal>
                 <div className="h-full rounded-[24px] border border-midnight/[0.07] bg-white p-7">
                   <p className="text-xs font-semibold uppercase tracking-[0.16em] text-electric">The challenge</p>
-                  <p className="mt-4 leading-relaxed text-midnight/70">{p.challenge}</p>
+                  <p className="mt-4 leading-relaxed text-slate">{p.challenge}</p>
                 </div>
               </Reveal>
               <Reveal delay={0.08}>
@@ -113,7 +113,7 @@ export default async function ProjectPage({ params }: Params) {
               {p.features.map((f, i) => (
                 <Reveal as="li" key={f} delay={i * 0.05}>
                   <div className="flex h-full items-start gap-3 rounded-[18px] bg-snow p-4">
-                    <span className="grid size-6 shrink-0 place-items-center rounded-full bg-electric text-white">
+                    <span className="grid size-6 shrink-0 place-items-center rounded-full bg-electric text-midnight">
                       <Check className="size-3.5" strokeWidth={3} />
                     </span>
                     <span className="font-medium text-midnight/80">{f}</span>
@@ -195,7 +195,7 @@ export default async function ProjectPage({ params }: Params) {
           </Reveal>
 
           <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-            <Link href="/projects" className="inline-flex items-center gap-2 text-sm font-semibold text-midnight/70 hover:text-electric">
+            <Link href="/projects" className="inline-flex items-center gap-2 text-sm font-semibold text-slate hover:text-electric">
               <ArrowLeft className="size-4" /> All projects
             </Link>
             <Link href={`/projects/${next.slug}`} className="group inline-flex items-center gap-2 text-sm font-semibold text-midnight hover:text-electric">

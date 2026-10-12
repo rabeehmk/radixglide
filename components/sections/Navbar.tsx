@@ -48,7 +48,7 @@ export function Navbar() {
         className={cn(
           "mx-auto flex h-16 max-w-[1320px] items-center justify-between rounded-full border px-3 pl-5 transition-all duration-500",
           scrolled || open
-            ? "border-white/10 bg-midnight/70 shadow-[0_10px_40px_-15px_rgba(0,0,0,0.6)] backdrop-blur-xl"
+            ? "border-azure/15 bg-navy/90 shadow-[0_10px_40px_-15px_rgba(0,0,0,0.6)] backdrop-blur-xl"
             : "border-transparent bg-transparent",
         )}
       >
@@ -117,7 +117,7 @@ export function Navbar() {
             exit={{ opacity: 0, clipPath: "circle(0% at 100% 0%)" }}
             transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
             onClick={(e) => (e.target as HTMLElement).closest("a") && setOpen(false)}
-            className="fixed inset-0 -z-10 flex flex-col overflow-y-auto bg-midnight px-6 pb-10 pt-28 lg:hidden"
+            className="fixed inset-0 -z-10 flex flex-col overflow-y-auto bg-navy px-6 pb-10 pt-28 lg:hidden"
           >
             <div aria-hidden className="grid-dark mask-radial pointer-events-none absolute inset-0" />
             <div

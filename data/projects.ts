@@ -1,12 +1,6 @@
 export type ProjectFilter = "Software" | "Websites" | "E-commerce" | "Digital Solutions";
 
-export const projectFilters: ("All" | ProjectFilter)[] = [
-  "All",
-  "Software",
-  "Websites",
-  "E-commerce",
-  "Digital Solutions",
-];
+export const projectFilters: ("All" | ProjectFilter)[] = ["All", "Websites", "E-commerce", "Digital Solutions"];
 
 export type Project = {
   slug: string;
@@ -30,125 +24,125 @@ export type Project = {
   /** Optional real images in /public (e.g. "/projects/otomation-1.webp"). Mockups render when empty. */
   cover?: string;
   screenshots: string[];
-  preview: "invoice" | "lms" | "security" | "store";
+  preview: "interior" | "photography" | "cafe" | "store";
 };
 
 /*
  * DRAFT COPY — the overview, challenge, solution and feature text below is written from
- * the project titles provided. Review each case study with the actual project scope and
+ * the project names provided. Review each case study with the actual project scope and
  * client approval before publishing.
  */
 export const projects: Project[] = [
   {
-    slug: "otomation",
-    name: "Otomation",
-    client: "Otomation",
-    title: "UAE E-Invoicing Platform",
-    category: "SaaS · FinTech",
-    industry: "Finance & Compliance",
-    filters: ["Software", "Digital Solutions"],
-    description:
-      "An e-invoicing platform designed to help UAE businesses create, manage and track invoices digitally.",
-    overview:
-      "Otomation is an e-invoicing platform for businesses in the UAE. The goal was a clear, reliable system for creating, managing and tracking invoices as businesses move towards digital invoicing.",
-    challenge:
-      "Invoicing workflows often involve manual data entry, scattered records and limited visibility into invoice status. The platform needed to make e-invoicing approachable for businesses while staying structured, secure and ready for evolving requirements.",
-    solution:
-      "RadixGlide designed and developed a web-based platform with a clean dashboard, structured invoice management and a scalable architecture that can be extended as requirements evolve.",
-    features: [
-      "Invoice creation and management",
-      "Customer and business records",
-      "Invoice status tracking",
-      "Dashboard overview",
-      "Role-based access",
-      "Scalable, extensible architecture",
-    ],
-    technologies: [],
-    outcomes: [],
-    screenshots: [],
-    preview: "invoice",
-  },
-  {
-    slug: "edufix",
-    name: "Edufix",
-    client: "Edufix Learning Academy",
-    title: "Learning Management Platform",
-    category: "EdTech · Web App",
-    industry: "Education",
-    filters: ["Software", "Websites"],
-    description:
-      "A learning management platform bringing courses, classes and student progress into one place.",
-    overview:
-      "Edufix Learning Academy needed a digital learning platform that makes it easy for students to access courses and for the academy to manage content and track progress.",
-    challenge:
-      "Course content, student communication and progress tracking were spread across different tools, making the learning experience inconsistent and administration time-consuming.",
-    solution:
-      "RadixGlide built a learning management platform with organised course content, a student-friendly interface and admin tools for managing learners and materials.",
-    features: [
-      "Course and lesson management",
-      "Student accounts and dashboards",
-      "Video lesson delivery",
-      "Progress tracking",
-      "Admin panel",
-      "Responsive, mobile-friendly design",
-    ],
-    technologies: [],
-    outcomes: [],
-    screenshots: [],
-    preview: "lms",
-  },
-  {
-    slug: "eyetrack-solutions",
-    name: "Eyetrack Solutions",
-    client: "Eyetrack Solutions",
-    title: "Smart Security & CCTV",
-    category: "Security · Brand & Web",
-    industry: "Security & Surveillance",
+    slug: "artecs-prime-decore",
+    name: "Artecs Prime Decore",
+    client: "Artecs Prime Decore",
+    title: "Interior Design & Décor Website",
+    category: "Interiors · Brand & Web",
+    industry: "Interior Design & Décor",
     filters: ["Websites", "Digital Solutions"],
     description:
-      "A professional digital presence for a smart security and CCTV solutions provider.",
+      "An elegant, portfolio-led website for an interior design and décor studio, built to turn visitors into consultation requests.",
     overview:
-      "Eyetrack Solutions provides smart security and CCTV solutions. The project focused on a professional digital presence that communicates trust and makes it easy for prospects to enquire.",
+      "Artecs Prime Decore is an interior design and décor company. The project focused on a premium online presence that showcases their work, explains their services and makes it effortless for homeowners and businesses to book a consultation.",
     challenge:
-      "Security is a trust-driven purchase. The business needed to present its services clearly, look credible to residential and commercial customers, and capture enquiries effectively.",
+      "Interior design is a visual, trust-driven decision. The studio needed a website that does justice to the quality of its finished spaces, presents a wide range of services clearly and captures serious enquiries rather than casual browsing.",
     solution:
-      "RadixGlide created a clear, modern website structure showcasing services and solutions, supported by strong calls to action and lead capture.",
+      "RadixGlide designed and developed a refined, image-first website with a categorised project gallery, clear service pages and well-placed consultation calls to action, supported by WhatsApp and call shortcuts for quick enquiries.",
     features: [
-      "Service and solution showcase",
-      "Trust-focused visual design",
-      "Enquiry and lead capture",
-      "WhatsApp and call actions",
-      "SEO-ready structure",
-      "Mobile-first layout",
+      "Categorised project gallery",
+      "Service pages for residential and commercial interiors",
+      "Consultation booking and enquiry forms",
+      "WhatsApp and click-to-call actions",
+      "SEO-ready page structure",
+      "Fast, mobile-first layout",
     ],
     technologies: [],
     outcomes: [],
     screenshots: [],
-    preview: "security",
+    preview: "interior",
   },
   {
-    slug: "petalbox",
-    name: "PetalBox",
-    client: "PetalBox",
-    title: "Premium E-commerce Platform",
-    category: "E-commerce · Growth",
-    industry: "Retail & Gifting",
+    slug: "photography-portfolio",
+    name: "Photography Portfolio",
+    client: "Professional Photographer",
+    title: "Photography Portfolio & Booking Website",
+    category: "Portfolio · Web Design",
+    industry: "Photography & Creative",
+    filters: ["Websites"],
+    description:
+      "A cinematic portfolio website that puts the photographs first and makes booking a shoot simple.",
+    overview:
+      "A professional photographer needed a portfolio website to showcase their best work across weddings, portraits and events, and to convert admirers into paying clients.",
+    challenge:
+      "Photography websites live or die by image quality and speed. The site had to display large, high-resolution galleries beautifully without slowing down, while keeping the path to booking short and obvious.",
+    solution:
+      "RadixGlide built a minimal, gallery-focused website with optimised image delivery, curated collections by category, and a clear packages and booking flow so prospective clients can enquire in a few taps.",
+    features: [
+      "Full-screen curated galleries",
+      "Collections by category (weddings, portraits, events)",
+      "Optimised, fast-loading images",
+      "Packages and booking enquiry form",
+      "Instagram and WhatsApp integration",
+      "Responsive design for every screen",
+    ],
+    technologies: [],
+    outcomes: [],
+    screenshots: [],
+    preview: "photography",
+  },
+  {
+    slug: "cafe-website",
+    name: "Café Website",
+    client: "Café & Coffee House",
+    title: "Café Website & Digital Menu",
+    category: "Hospitality · Web",
+    industry: "Food & Beverage",
+    filters: ["Websites", "Digital Solutions"],
+    description:
+      "A warm, inviting café website with a digital menu, location details and easy table reservations.",
+    overview:
+      "A café wanted a website that captures the feel of the space, shows its menu clearly and helps nearby customers find them, call them or reserve a table.",
+    challenge:
+      "Customers searching for a café on their phone want the menu, opening hours and directions within seconds. The site needed to be fast on mobile, simple to keep up to date, and reflect the café's atmosphere.",
+    solution:
+      "RadixGlide designed and developed a mobile-first website with a digital menu, an ambience gallery, a reservation enquiry flow and integrated maps, with local SEO foundations to help the café appear in nearby searches.",
+    features: [
+      "Digital menu with categories",
+      "Table reservation enquiries",
+      "Ambience and food gallery",
+      "Google Maps location and opening hours",
+      "Click-to-call and WhatsApp ordering",
+      "Local SEO setup",
+    ],
+    technologies: [],
+    outcomes: [],
+    screenshots: [],
+    preview: "cafe",
+  },
+  {
+    slug: "latefite",
+    name: "Latefite",
+    client: "Latefite",
+    title: "Accessories E-commerce Store",
+    category: "E-commerce · Retail",
+    industry: "Fashion & Accessories",
     filters: ["E-commerce", "Websites"],
     description:
-      "A premium online store with a refined shopping experience and a smooth checkout.",
+      "A stylish online store for an accessories brand, with a smooth shopping journey from browsing to checkout.",
     overview:
-      "PetalBox is a premium gifting brand. The project focused on an elegant online store that reflects the brand and makes ordering simple.",
+      "Latefite is an accessories shop that wanted to sell online. The project focused on a modern e-commerce store that showcases its collections and makes ordering quick and secure.",
     challenge:
-      "Premium products need a premium experience. The store had to showcase products beautifully, keep the buying journey simple and support marketing activity.",
+      "Accessories are impulse and style-led purchases. The store had to present products attractively, make filtering through collections effortless and keep checkout short so shoppers complete their orders.",
     solution:
-      "RadixGlide designed and developed a brand-led e-commerce experience with clear product presentation, a streamlined checkout and marketing-ready integrations.",
+      "RadixGlide designed and developed a brand-led e-commerce store with organised collections, rich product pages, a streamlined cart and checkout, and an admin panel for managing products and orders.",
     features: [
-      "Brand-led storefront design",
-      "Product catalogue management",
-      "Streamlined cart and checkout",
-      "Order management",
-      "Marketing and analytics integrations",
-      "Responsive shopping experience",
+      "Collections and category filtering",
+      "Product pages with image galleries",
+      "Cart, wishlist and secure checkout",
+      "Online payment integration",
+      "Order and inventory management",
+      "Mobile-first shopping experience",
     ],
     technologies: [],
     outcomes: [],

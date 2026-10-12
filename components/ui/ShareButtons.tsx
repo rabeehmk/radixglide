@@ -14,7 +14,7 @@ const glyph = {
 };
 
 const btn =
-  "grid size-10 place-items-center rounded-full border border-midnight/10 bg-white text-midnight/60 transition-all duration-300 hover:-translate-y-0.5 hover:border-electric hover:bg-electric hover:text-white";
+  "grid size-10 place-items-center rounded-full border border-midnight/10 bg-white text-slate transition-all duration-300 hover:-translate-y-0.5 hover:border-electric hover:bg-electric hover:text-midnight";
 
 /** Share an article. `url` must be absolute. */
 export function ShareButtons({ url, title, className }: { url: string; title: string; className?: string }) {

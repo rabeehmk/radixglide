@@ -56,7 +56,7 @@ export default function ServicesPage() {
                       {g.title}
                     </h2>
                   </div>
-                  <p className="max-w-md text-midnight/55">{g.text}</p>
+                  <p className="max-w-md text-slate">{g.text}</p>
                 </Reveal>
                 <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-5">
                   {list.map((s, i) => (

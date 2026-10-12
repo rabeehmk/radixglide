@@ -6,12 +6,12 @@ import type { Project } from "@/data/projects";
  */
 export function ProjectPreview({ type }: { type: Project["preview"] }) {
   switch (type) {
-    case "invoice":
-      return <InvoiceMock />;
-    case "lms":
-      return <LmsMock />;
-    case "security":
-      return <SecurityMock />;
+    case "interior":
+      return <InteriorMock />;
+    case "photography":
+      return <PhotographyMock />;
+    case "cafe":
+      return <CafeMock />;
     case "store":
       return <StoreMock />;
   }
@@ -33,110 +33,35 @@ function Window({ children, className = "" }: { children: React.ReactNode; class
   );
 }
 
-function InvoiceMock() {
-  const rows = [
-    ["INV-2041", "Al Noor Trading", "AED 12,480", "Cleared"],
-    ["INV-2040", "Gulf Logistics", "AED 8,215", "Cleared"],
-    ["INV-2039", "Sahara Foods", "AED 3,960", "Pending"],
-    ["INV-2038", "Marina Tech", "AED 21,700", "Cleared"],
+function InteriorMock() {
+  const rooms = [
+    ["Living Rooms", "from-[#3A2C1F] to-[#14100C]"],
+    ["Kitchens", "from-[#1F2A2A] to-[#0B1012]"],
+    ["Offices", "from-[#24222E] to-[#0D0C12]"],
   ];
   return (
     <Window className="w-full">
-      <div className="grid sm:grid-cols-[150px_1fr]">
-        <div className="hidden space-y-2.5 border-r border-white/[0.06] p-4 sm:block">
-          <div className="h-2.5 w-16 rounded bg-electric/70" />
-          {[0, 1, 2, 3, 4].map((i) => (
-            <div key={i} className={`h-2 rounded ${i === 1 ? "w-20 bg-white/40" : "w-14 bg-white/10"}`} />
-          ))}
-        </div>
-        <div className="p-4 sm:p-5">
-          <div className="grid grid-cols-3 gap-2 sm:gap-3">
-            {[
-              ["Issued", "1,284"],
-              ["VAT", "AED 64k"],
-              ["Compliance", "100%"],
-            ].map(([k, v]) => (
-              <div key={k} className="rounded-xl border border-white/[0.06] bg-white/[0.03] p-2.5 sm:p-3">
-                <p className="text-[9px] uppercase tracking-wider text-white/40">{k}</p>
-                <p className="mt-1 text-xs font-bold text-white sm:text-base">{v}</p>
-              </div>
-            ))}
-          </div>
-          <div className="mt-4 divide-y divide-white/[0.05] rounded-xl border border-white/[0.06]">
-            {rows.map((r) => (
-              <div key={r[0]} className="grid grid-cols-[1fr_auto] gap-2 px-3 py-2.5 text-[10px] sm:grid-cols-4 sm:text-[11px]">
-                <span className="font-mono text-steel">{r[0]}</span>
-                <span className="hidden truncate text-white/70 sm:block">{r[1]}</span>
-                <span className="hidden text-white/80 sm:block">{r[2]}</span>
-                <span className={`justify-self-end rounded-full px-2 py-0.5 text-[9px] font-semibold ${r[3] === "Cleared" ? "bg-electric/15 text-azure" : "bg-white/10 text-steel"}`}>
-                  {r[3]}
-                </span>
-              </div>
-            ))}
-          </div>
+      <div className="relative aspect-[16/7] overflow-hidden bg-gradient-to-br from-[#2B2118] via-[#14100C] to-[#0B0E14]">
+        <div className="absolute inset-y-0 right-0 w-1/2 bg-gradient-to-l from-[#C8A26B]/20 to-transparent" />
+        <div className="absolute bottom-0 left-[55%] h-[45%] w-[30%] rounded-t-lg bg-[#C8A26B]/15" />
+        <div className="absolute bottom-[45%] left-[62%] h-[18%] w-[16%] rounded-full bg-[#E9D8B4]/20 blur-md" />
+        <div className="absolute left-4 top-1/2 -translate-y-1/2 sm:left-6">
+          <p className="text-[8px] font-semibold uppercase tracking-[0.3em] text-[#C8A26B] sm:text-[9px]">Artecs Prime Decore</p>
+          <p className="mt-1.5 text-sm font-bold leading-tight text-white sm:text-lg">
+            Spaces crafted
+            <br />
+            for living.
+          </p>
+          <span className="mt-3 inline-block rounded-full bg-[#C8A26B] px-3 py-1 text-[9px] font-bold text-midnight">
+            Book a consultation
+          </span>
         </div>
       </div>
-    </Window>
-  );
-}
-
-function LmsMock() {
-  return (
-    <Window className="w-full">
-      <div className="p-4 sm:p-5">
-        <div className="relative aspect-video overflow-hidden rounded-xl bg-gradient-to-br from-electric/40 to-navy">
-          <div className="grid-dark absolute inset-0" />
-          <div className="absolute inset-0 grid place-items-center">
-            <span className="grid size-12 place-items-center rounded-full bg-electric/90 text-midnight shadow-[0_0_30px_rgba(59,130,246,0.6)]">
-              <svg viewBox="0 0 24 24" className="ml-0.5 size-5 fill-current" aria-hidden><path d="M8 5v14l11-7z" /></svg>
-            </span>
-          </div>
-          <div className="absolute inset-x-3 bottom-3 h-1 rounded-full bg-white/15">
-            <div className="h-full w-2/3 rounded-full bg-electric" />
-          </div>
-        </div>
-        <div className="mt-4 space-y-2.5">
-          {[86, 64, 42].map((p, i) => (
-            <div key={p} className="flex items-center gap-3">
-              <span className="grid size-7 shrink-0 place-items-center rounded-lg bg-white/[0.06] text-[10px] font-bold text-steel">
-                {i + 1}
-              </span>
-              <div className="flex-1">
-                <div className="h-1.5 rounded-full bg-white/[0.08]">
-                  <div className="h-full rounded-full bg-azure/70" style={{ width: `${p}%` }} />
-                </div>
-              </div>
-              <span className="text-[10px] font-semibold text-steel">{p}%</span>
-            </div>
-          ))}
-        </div>
-      </div>
-    </Window>
-  );
-}
-
-function SecurityMock() {
-  return (
-    <Window className="w-full">
-      <div className="grid grid-cols-2 gap-2 p-3 sm:p-4">
-        {["CAM 01 · Entrance", "CAM 02 · Lobby", "CAM 03 · Parking", "CAM 04 · Warehouse"].map((c, i) => (
-          <div
-            key={c}
-            className="relative aspect-[4/3] overflow-hidden rounded-lg bg-gradient-to-br from-[#111C33] to-[#070B14]"
-          >
-            <div
-              className="absolute inset-0 opacity-30"
-              style={{
-                backgroundImage: "repeating-linear-gradient(0deg, rgba(255,255,255,0.05) 0 1px, transparent 1px 3px)",
-              }}
-            />
-            <div className="absolute bottom-2 left-2 text-[8px] font-mono text-steel sm:text-[9px]">{c}</div>
-            <div className="absolute right-2 top-2 flex items-center gap-1 text-[8px] font-bold text-azure">
-              <span className="size-1.5 animate-pulse rounded-full bg-electric" /> REC
-            </div>
-            {i === 1 && (
-              <div className="absolute left-[38%] top-[30%] h-[40%] w-[22%] rounded border border-electric shadow-[0_0_12px_rgba(59,130,246,0.5)]" />
-            )}
+      <div className="grid grid-cols-3 gap-2 p-3 sm:gap-3 sm:p-4">
+        {rooms.map(([label, hue]) => (
+          <div key={label} className={`relative aspect-[4/3] overflow-hidden rounded-lg bg-gradient-to-br ${hue}`}>
+            <div className="absolute inset-x-[20%] bottom-[18%] h-[30%] rounded bg-white/[0.07]" />
+            <span className="absolute bottom-1.5 left-2 text-[8px] font-semibold text-white/80 sm:text-[9px]">{label}</span>
           </div>
         ))}
       </div>
@@ -144,18 +69,99 @@ function SecurityMock() {
   );
 }
 
+function PhotographyMock() {
+  const tiles = [
+    "col-span-2 row-span-2 from-[#2A2633] to-[#0D0C12]",
+    "from-[#33261F] to-[#120D0B]",
+    "from-[#1D2A33] to-[#0A0F12]",
+    "from-[#2E2A1F] to-[#100E0A]",
+    "from-[#1F1F2E] to-[#0B0B12]",
+  ];
+  return (
+    <Window className="w-full">
+      <div className="p-3 sm:p-4">
+        <div className="flex items-center justify-between">
+          <span className="font-serif text-sm italic tracking-wide text-white">Portfolio</span>
+          <div className="flex gap-2 text-[8px] text-steel sm:gap-3 sm:text-[9px]">
+            <span className="text-white">Weddings</span>
+            <span>Portraits</span>
+            <span>Events</span>
+          </div>
+        </div>
+        <div className="mt-3 grid auto-rows-[44px] grid-cols-4 gap-1.5 sm:auto-rows-[60px] sm:gap-2">
+          {tiles.map((t) => (
+            <div key={t} className={`relative overflow-hidden rounded-md bg-gradient-to-br ${t}`}>
+              <div className="absolute left-1/2 top-[40%] size-[38%] -translate-x-1/2 -translate-y-1/2 rounded-full bg-white/[0.08] blur-[2px]" />
+              <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/50 to-transparent" />
+            </div>
+          ))}
+        </div>
+        <div className="mt-3 flex items-center justify-between rounded-xl border border-white/[0.06] bg-white/[0.03] px-3 py-2">
+          <span className="text-[10px] text-steel">Now booking for this season</span>
+          <span className="text-[10px] font-bold text-azure">Book a shoot →</span>
+        </div>
+      </div>
+    </Window>
+  );
+}
+
+function CafeMock() {
+  const menu = [
+    ["Cappuccino", "₹160"],
+    ["Cold Brew", "₹190"],
+    ["Hazelnut Latte", "₹210"],
+    ["Blueberry Cheesecake", "₹240"],
+  ];
+  return (
+    <Window className="w-full">
+      <div className="grid sm:grid-cols-[1fr_1.1fr]">
+        <div className="relative hidden min-h-[200px] overflow-hidden bg-gradient-to-br from-[#3B2618] via-[#1C120B] to-[#0B0E14] sm:block">
+          <div className="absolute left-1/2 top-[42%] size-20 -translate-x-1/2 -translate-y-1/2 rounded-full border-[6px] border-[#E9D8B4]/25 bg-[#6B4226]/50" />
+          <div className="absolute left-1/2 top-[42%] size-10 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#C8A26B]/30" />
+          <p className="absolute bottom-4 left-4 text-sm font-bold text-white">Brewed with love.</p>
+        </div>
+        <div className="p-4 sm:p-5">
+          <div className="flex items-center justify-between">
+            <span className="text-sm font-bold tracking-tight text-white">Menu</span>
+            <span className="rounded-full bg-[#C8A26B]/15 px-2.5 py-1 text-[9px] font-semibold text-[#E9D8B4]">
+              Open · 8 AM – 11 PM
+            </span>
+          </div>
+          <div className="mt-3 divide-y divide-white/[0.05]">
+            {menu.map(([item, price]) => (
+              <div key={item} className="flex items-center justify-between py-2 text-[10px] sm:text-[11px]">
+                <span className="text-white/80">{item}</span>
+                <span className="font-semibold text-[#E9D8B4]">{price}</span>
+              </div>
+            ))}
+          </div>
+          <div className="mt-3 grid grid-cols-2 gap-2">
+            <span className="rounded-lg bg-[#C8A26B] py-2 text-center text-[9px] font-bold text-midnight">Reserve a table</span>
+            <span className="rounded-lg border border-white/10 py-2 text-center text-[9px] font-semibold text-white/80">
+              Get directions
+            </span>
+          </div>
+        </div>
+      </div>
+    </Window>
+  );
+}
+
 function StoreMock() {
   const products = [
-    { name: "Blush Peony Box", price: "AED 249", hue: "from-[#2a1d22] to-[#0f0b0d]" },
-    { name: "Ivory Rose Set", price: "AED 189", hue: "from-[#1E2433] to-[#0B0E14]" },
-    { name: "Midnight Orchid", price: "AED 319", hue: "from-[#151D2E] to-[#090C14]" },
+    { name: "Classic Leather Watch", price: "₹2,499", hue: "from-[#2a2118] to-[#0f0c0a]" },
+    { name: "Gold Layered Necklace", price: "₹1,299", hue: "from-[#2E2A1F] to-[#100E0A]" },
+    { name: "Polarised Sunglasses", price: "₹1,799", hue: "from-[#151D2E] to-[#090C14]" },
   ];
   return (
     <Window className="w-full">
       <div className="p-4 sm:p-5">
         <div className="flex items-center justify-between">
-          <span className="text-sm font-bold tracking-tight text-white">PetalBox</span>
-          <span className="rounded-full bg-electric px-2.5 py-1 text-[9px] font-bold text-white">Cart · 2</span>
+          <span className="text-sm font-bold tracking-tight text-white">Latefite</span>
+          <div className="flex items-center gap-2">
+            <span className="hidden text-[9px] text-steel sm:inline">Watches · Jewellery · Eyewear</span>
+            <span className="rounded-full bg-electric px-2.5 py-1 text-[9px] font-bold text-white">Cart · 2</span>
+          </div>
         </div>
         <div className="mt-4 grid grid-cols-3 gap-2 sm:gap-3">
           {products.map((p) => (
@@ -171,7 +177,7 @@ function StoreMock() {
           ))}
         </div>
         <div className="mt-4 flex items-center justify-between rounded-xl border border-white/[0.06] bg-white/[0.03] px-3 py-2.5">
-          <span className="text-[10px] text-steel">Secure checkout</span>
+          <span className="text-[10px] text-steel">Secure checkout · Free shipping</span>
           <span className="text-xs font-bold text-azure">Proceed →</span>
         </div>
       </div>

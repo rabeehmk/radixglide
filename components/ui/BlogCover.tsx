@@ -59,7 +59,7 @@ export function BlogCover({ category, seed }: { category: BlogCategory; seed: st
         />
       ))}
       <div
-        className="absolute grid size-14 place-items-center rounded-2xl border border-white/15 bg-white/10 text-azure shadow-[0_20px_50px_-15px_rgba(59,130,246,0.6)] backdrop-blur-md transition-transform duration-700 group-hover:scale-110 sm:size-16"
+        className="absolute grid size-14 place-items-center rounded-2xl border border-white/15 bg-white/10 text-azure shadow-[0_20px_50px_-15px_rgba(168,131,79,0.6)] backdrop-blur-md transition-transform duration-700 group-hover:scale-110 sm:size-16"
         style={{ left: `${x}%`, top: `${y}%`, transform: "translate(-50%, -50%)" }}
       >
         <Icon className="size-6 sm:size-7" strokeWidth={1.75} />

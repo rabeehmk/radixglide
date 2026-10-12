@@ -16,7 +16,7 @@ export function Logo({ tone = "dark", className }: { tone?: "dark" | "light"; cl
           tone === "dark" ? "text-white" : "text-midnight",
         )}
       >
-        Radix<span className="text-azure">Glide</span>
+        Radix<span className={tone === "dark" ? "text-azure" : "text-electric"}>Glide</span>
       </span>
     </Link>
   );
@@ -27,12 +27,12 @@ export function LogoMark({ className }: { className?: string }) {
     <svg viewBox="0 0 40 40" className={className} aria-hidden>
       <defs>
         <linearGradient id="rg-mark" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0" stopColor="#3B82F6" />
-          <stop offset="1" stopColor="#0F172A" />
+          <stop offset="0" stopColor="#0B2545" />
+          <stop offset="1" stopColor="#071A33" />
         </linearGradient>
       </defs>
       <rect width="40" height="40" rx="12" fill="url(#rg-mark)" />
-      <rect x="0.5" y="0.5" width="39" height="39" rx="11.5" fill="none" stroke="#60A5FA" strokeOpacity="0.35" />
+      <rect x="0.5" y="0.5" width="39" height="39" rx="11.5" fill="none" stroke="#D6BE96" strokeOpacity="0.6" />
       <path
         d="M11 28V13h8.5a5 5 0 0 1 0 10H15l9 5.5"
         fill="none"
@@ -41,7 +41,7 @@ export function LogoMark({ className }: { className?: string }) {
         strokeLinecap="round"
         strokeLinejoin="round"
       />
-      <circle cx="29" cy="13" r="2.6" fill="#60A5FA" />
+      <circle cx="29" cy="13" r="2.6" fill="#D6BE96" />
     </svg>
   );
 }

@@ -56,15 +56,15 @@ export function Process() {
                 <span
                   className={`relative z-10 grid size-14 shrink-0 place-items-center rounded-full border text-sm font-bold transition-all duration-500 group-hover:scale-110 ${
                     i === processSteps.length - 1
-                      ? "border-transparent bg-electric text-white shadow-[0_0_30px_-4px_rgba(59,130,246,0.8)]"
-                      : "border-midnight/10 bg-white text-electric shadow-[0_10px_30px_-12px_rgba(15,23,42,0.35)] group-hover:border-electric group-hover:bg-navy group-hover:text-azure"
+                      ? "border-transparent bg-electric text-midnight shadow-[0_0_30px_-4px_rgba(168,131,79,0.8)]"
+                      : "border-midnight/10 bg-white text-electric shadow-[0_10px_30px_-12px_rgba(11,37,69,0.35)] group-hover:border-electric group-hover:bg-navy group-hover:text-azure"
                   }`}
                 >
                   {s.no}
                 </span>
                 <div className="pt-2 lg:pt-6">
                   <h3 className="text-xl font-bold tracking-[-0.02em] text-midnight">{s.title}</h3>
-                  <p className="mt-2 max-w-xs text-sm leading-relaxed text-midnight/55 lg:mx-auto">{s.text}</p>
+                  <p className="mt-2 max-w-xs text-sm leading-relaxed text-slate lg:mx-auto">{s.text}</p>
                 </div>
               </motion.li>
             ))}

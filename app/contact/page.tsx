@@ -74,7 +74,7 @@ export default function ContactPage() {
           <div className="space-y-4 lg:col-span-5">
             <Reveal>
               <h2 className="text-2xl font-bold tracking-[-0.03em] text-midnight">Get in touch</h2>
-              <p className="mt-2 text-midnight/60">
+              <p className="mt-2 text-slate">
                 Share a few details and our team will get back to you. The first consultation is free.
               </p>
             </Reveal>

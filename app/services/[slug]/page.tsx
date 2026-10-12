@@ -109,7 +109,7 @@ export default async function ServicePage({ params }: Params) {
             {s.benefits.map((b, i) => (
               <Reveal as="li" key={b} delay={i * 0.06}>
                 <div className="flex h-full items-start gap-3 rounded-[20px] bg-snow p-5">
-                  <span className="grid size-7 shrink-0 place-items-center rounded-full bg-electric text-white">
+                  <span className="grid size-7 shrink-0 place-items-center rounded-full bg-electric text-midnight">
                     <Check className="size-4" strokeWidth={3} />
                   </span>
                   <span className="font-semibold text-midnight">{b}</span>
@@ -130,12 +130,12 @@ export default async function ServicePage({ params }: Params) {
             {serviceProcess.map((p, i) => (
               <Reveal as="li" key={p.no} delay={i * 0.08} className="relative">
                 <div className="flex gap-4 md:flex-col md:items-center md:text-center">
-                  <span className="relative grid size-12 shrink-0 place-items-center rounded-full border border-midnight/10 bg-white text-sm font-bold text-electric shadow-[0_10px_30px_-12px_rgba(15,23,42,0.3)]">
+                  <span className="relative grid size-12 shrink-0 place-items-center rounded-full border border-midnight/10 bg-white text-sm font-bold text-electric shadow-[0_10px_30px_-12px_rgba(11,37,69,0.3)]">
                     {p.no}
                   </span>
                   <div className="md:mt-5">
                     <h3 className="font-bold text-midnight">{p.title}</h3>
-                    <p className="mt-1.5 text-sm leading-relaxed text-midnight/55">{p.text}</p>
+                    <p className="mt-1.5 text-sm leading-relaxed text-slate">{p.text}</p>
                   </div>
                 </div>
               </Reveal>

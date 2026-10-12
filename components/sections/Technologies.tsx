@@ -19,7 +19,7 @@ export function Technologies() {
         <ul className="mx-auto mt-14 flex max-w-5xl flex-wrap justify-center gap-3 sm:mt-16 sm:gap-4">
           {technologies.map((t, i) => (
             <Reveal as="li" key={t} delay={i * 0.035}>
-              <div className="group flex items-center gap-3 rounded-2xl border border-white/[0.08] bg-white/[0.03] px-4 py-3 text-steel backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-electric/40 hover:bg-white/[0.07] hover:text-azure hover:shadow-[0_15px_40px_-15px_rgba(59,130,246,0.4)] sm:px-5 sm:py-4">
+              <div className="group flex items-center gap-3 rounded-2xl border border-white/[0.08] bg-white/[0.03] px-4 py-3 text-steel backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-electric/40 hover:bg-white/[0.07] hover:text-azure hover:shadow-[0_15px_40px_-15px_rgba(168,131,79,0.4)] sm:px-5 sm:py-4">
                 <TechIcon name={t} />
                 <span className="text-sm font-semibold text-white/80 transition-colors group-hover:text-white sm:text-base">
                   {t}

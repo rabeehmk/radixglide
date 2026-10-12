@@ -25,7 +25,7 @@ export function ProjectsExplorer() {
               className={cn(
                 "inline-flex shrink-0 items-center gap-2 rounded-full border px-4 py-2 text-sm font-medium transition-all duration-300",
                 filter === f
-                  ? "border-electric bg-electric text-white"
+                  ? "border-navy bg-navy text-white"
                   : "border-white/10 bg-white/[0.03] text-steel hover:border-white/25 hover:text-white",
               )}
             >

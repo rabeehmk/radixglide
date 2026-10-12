@@ -1,12 +1,14 @@
 @import "tailwindcss";
 
 @theme {
-  --color-midnight: #070b14;
-  --color-navy: #0f172a;
-  --color-electric: #3b82f6;
-  --color-azure: #60a5fa;
-  --color-snow: #f8fafc;
-  --color-steel: #94a3b8;
+  /* Brand palette: Deep Navy + Gold Beige on Soft Ivory, Slate body text */
+  --color-midnight: #071a33; /* deepest navy — dark sections, headings */
+  --color-navy: #0b2545; /* Deep Navy — navigation, footer, buttons */
+  --color-electric: #a8834f; /* Gold Beige (deep) — accents on light backgrounds */
+  --color-azure: #d6be96; /* Gold Beige (light) — highlights on navy */
+  --color-snow: #faf7f2; /* Soft Ivory — page background */
+  --color-steel: #a9b3c4; /* muted text on navy */
+  --color-slate: #475569; /* Slate — body text */
 
   --font-sans: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
 
@@ -72,14 +74,14 @@
   /* Fine technical grid used on dark sections */
   .grid-dark {
     background-image:
-      linear-gradient(rgba(96, 165, 250, 0.07) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(96, 165, 250, 0.07) 1px, transparent 1px);
+      linear-gradient(rgba(214,190,150, 0.07) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(214,190,150, 0.07) 1px, transparent 1px);
     background-size: 56px 56px;
   }
   .grid-light {
     background-image:
-      linear-gradient(rgba(15, 23, 42, 0.05) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(15, 23, 42, 0.05) 1px, transparent 1px);
+      linear-gradient(rgba(11,37,69, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(11,37,69, 0.05) 1px, transparent 1px);
     background-size: 56px 56px;
   }
   .mask-radial {
@@ -97,7 +99,7 @@
   }
 
   .text-gradient {
-    background: linear-gradient(100deg, #3b82f6 0%, #60a5fa 55%, #f8fafc 110%);
+    background: linear-gradient(100deg, #a8834f 0%, #d6be96 55%, #f3e9d7 110%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;

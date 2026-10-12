@@ -6,6 +6,7 @@ import { Navbar } from "@/components/sections/Navbar";
 import { Footer } from "@/components/sections/Footer";
 import { CursorGlow } from "@/components/ui/CursorGlow";
 import { FloatingWhatsApp } from "@/components/ui/WhatsApp";
+import { FloatingChatBot } from "@/components/ui/ChatBot";
 import { JsonLd } from "@/components/ui/JsonLd";
 
 const manrope = Manrope({
@@ -37,7 +38,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#070B14",
+  themeColor: "#071A33",
 };
 
 const organization = {
@@ -58,7 +59,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="font-sans">
         <a
           href="#main"
-          className="sr-only z-[100] rounded-full bg-electric px-4 py-2 font-semibold text-white focus:not-sr-only focus:fixed focus:left-4 focus:top-4"
+          className="sr-only z-[100] rounded-full bg-navy px-4 py-2 font-semibold text-white focus:not-sr-only focus:fixed focus:left-4 focus:top-4"
         >
           Skip to content
         </a>
@@ -66,6 +67,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main id="main">{children}</main>
         <Footer />
         <FloatingWhatsApp />
+        <FloatingChatBot />
         <CursorGlow />
         <JsonLd data={organization} />
       </body>
